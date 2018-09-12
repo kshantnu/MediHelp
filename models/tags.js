@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const Tags = mongoose.model('Tags',{
-    tag: {
-        name: String,
+    disease: {
+        type: String,
         required: true,
         trim: true,
     },
     index: {
-        name: [{type: String}],
+        type: [{type: String}],
         required: true,
         trim: true,
     },
