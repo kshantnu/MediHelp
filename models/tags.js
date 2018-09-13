@@ -5,11 +5,16 @@ const Tags = mongoose.model('Tags',{
         required: true,
         trim: true,
     },
-    index: {
+    key: {
         type: [{type: String}],
         required: true,
         trim: true,
     },
+    index: {
+        type: String,
+        required: true,
+        trim: true,
+    }
 
 });
 module.exports = {
