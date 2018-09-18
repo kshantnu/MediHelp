@@ -11,7 +11,7 @@ export class PostSuggestionService {
   medicines:Array<String>;
   doctors:Array<String>;
   comments:String;
-  baseUrl:String;
+  baseUrl:String; 
  
   constructor(private http: HttpClient ) {
    if(!environment.production) {
