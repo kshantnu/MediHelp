@@ -8,10 +8,11 @@ import {Router,ActivatedRoute} from "@angular/router";
 })
 export class NavigationComponent implements OnInit {
   textValue:String;
-
+  //query:String;
   constructor(
     private router: Router,private route : ActivatedRoute) { 
-    
+    // This workaround is because on intial pageload we wont receive query string
+      
   }
 
   ngOnInit() {
@@ -19,7 +20,17 @@ export class NavigationComponent implements OnInit {
     .route
     .queryParams
     .subscribe(params => {
-      this.textValue = params.term;
+      const location = window.location.href.indexOf('?');
+      if(location > -1) {
+       const term = window.location.href.split('?')[1];
+        if(term.indexOf('term=') > -1) {
+          if(term){
+           const decodedQueryParam = term.split('=')[1];
+           this.textValue = decodeURIComponent(decodedQueryParam);
+          }
+          
+        }
+      }
     });
   }
   onSearch(term) {

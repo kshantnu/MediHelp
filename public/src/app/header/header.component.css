@@ -53,7 +53,7 @@
     padding: 2em;
 }
 .description h1{
- color:#F97300 ;
+ color:#1ebb42 ;
 }
 .description p{
  color:#666;
@@ -62,7 +62,22 @@
  line-height: 1.5;
 }
 .description button{
- border:1px  solid #F97300;
- background:#F97300;
+ border:1px  solid #1ebb42;
+ background:#1ebb42;
  color:#fff;
 }
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+       -moz-transition: -moz-transform 0.3s ease-out;
+         -o-transition: -o-transform 0.3s ease-out;
+            transition: transform 0.3s ease-out;
+  }
+  
+  .modal.in .modal-dialog {
+  
+  }
+
+  #exampleModalLongTitle {
+      color: #1ebb42;
+  }

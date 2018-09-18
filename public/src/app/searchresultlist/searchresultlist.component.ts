@@ -1,6 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {SearchResult} from '../models/searchresult';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute,Router} from "@angular/router";
 import {FetchResultService} from '../searchbar/fetchresult.service';
 
 @Component({selector: 'app-searchresultlist', templateUrl: './searchresultlist.component.html', styleUrls: ['./searchresultlist.component.css']})
@@ -15,11 +15,8 @@ export class SearchresultlistComponent implements OnInit {
 
   safeURL:any;
 
-  constructor(private route : ActivatedRoute, private _fetchResultService : FetchResultService) {
-    
-    
+  constructor(private router: Router ,private route : ActivatedRoute, private _fetchResultService : FetchResultService) {
 
-      
   }
 
   ngOnInit() {
