@@ -4,8 +4,7 @@ const bodyparser = require('body-parser');
 const {mongoose} = require('./db-config');
 
 const {UserSubmissions} = require('./models/usersubmissions');
-//const {Tags} = require('./models/tags');
-//const {Symptoms} = require('./models/symptoms');
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -19,6 +18,8 @@ app.post('/getsuggestion',(req,res) => {
   tagsToSearchFor.map(item => {
     queries.push(UserSubmissions.find({diseases: item}));
     queries.push(UserSubmissions.find({symptoms: item}));
+    queries.push(UserSubmissions.find({medicines: item}));
+    queries.push(UserSubmissions.find({doctors: item}));
   });
   Promise.all(queries).then(resultArray => {
     res.send(resultArray);
@@ -29,9 +30,9 @@ app.post('/getsuggestion',(req,res) => {
 
 app.post('/submitsuggestion',(req,res) => {
   const userSubmissions = new UserSubmissions({
-      diseases : req.body.diseases,
       symptoms: req.body.symptoms,
       doctors: req.body.doctors,
+      medicines: req.body.medicines,
       comments: req.body.comments,
   });
   userSubmissions.save().then(userSubmittedDoc => {
@@ -41,7 +42,7 @@ app.post('/submitsuggestion',(req,res) => {
   })
 })
 
-app.listen(3000,() => {
-    console.log('app started at 3000');
+app.listen(port,() => {
+    console.log(`app started at ${port}`);
 })
 
