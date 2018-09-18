@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
-const UserSubmissions = mongoose.model('UserSubmissions', {
-    diseases: {
-        type: [{type: String}],
-        required: true,
-        trim: true,
-    },
+const UserSubmissions = mongoose.model('UserSubmissions', {   
     symptoms: {
         type: [{type: String}],
         required: true,

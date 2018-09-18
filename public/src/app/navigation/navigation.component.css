@@ -1,0 +1,21 @@
+.navbar{ background:#1ebb42;}
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff !important;}
+#navbarSupportedContent .navigation-search {
+  width: 50% !important;
+  margin: auto;
+  position: relative;
+  top: 10px;
+}
+
+.nav-item .active {
+  background: #f4f4f4;
+  color: #F97300;
+}
+
+.search-suggestion {
+  background-color:transparent;
+}

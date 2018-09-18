@@ -1,0 +1,12 @@
+
+  <div class="form-group">
+      <input type="text"
+             class="form-control"
+             placeholder="Enter your queries"
+             (keyup)="enableButton(query.value)"
+             #query>
+    </div>
+  <button type="button"
+          class="btn btn-primary"
+          (click)="fetchResult(query.value)" [disabled]="disableButton" >Search
+  </button>

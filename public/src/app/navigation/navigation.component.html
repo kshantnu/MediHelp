@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" [routerLinkActive]="['active']"
+    [routerLink]="['./home']">MediHelp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        
+        <div class="input-group mb-3 navigation-search">
+            <input  type="text" #query class="form-control" placeholder="Search by medicines, symptoms or doctors" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class='btn btn-lg search-suggestion' (click) = "onSearch(query.value)">
+                    <i class="fas fa-search"></i>
+                 </button>
+        </div>
+      </div>
+        <ul class="navbar-nav mr-4">
+            <li class="nav-item">
+                <a class="nav-link"  [routerLinkActive]="['active']"
+                [routerLink]="['./home']">Home</a> </li> 
+                
+            <li class="nav-item">
+                <a class="nav-link "  [routerLinkActive]="['active']"
+                [routerLink]="['./suggestionform']">Give Suggestions</a> </li>
+            <li class="nav-item">
+                <a class="nav-link "  [routerLinkActive]="['active']"
+                [routerLink]="['./aboutme']"> About Me</a> </li>
+        </ul>
+    </div>
+</nav>

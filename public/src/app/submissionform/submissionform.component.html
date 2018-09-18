@@ -1,0 +1,81 @@
+
+<div class="alert alert-dismissible fade show" *ngIf="showNotification" role="alert" [ngClass]="className">
+    <strong>Holy guacamole!</strong> {{notificationMessage}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+<div class="container suggestion-form">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <form [formGroup]="suggestionForm" novalidate (ngSubmit)="submitSuggestion()">
+            
+          <div class="form-group">
+            <label>Symptoms:</label>
+            <input [ngClass]="{
+              'is-valid' : symptoms.valid && (symptoms.dirty || symptoms.touched),
+              'is-invalid' : symptoms.invalid && (symptoms.dirty || symptoms.touched)
+            }" type="text" class="form-control is-invalid" formControlName="symptoms" required />
+            <small id="symptomsHelpBlock" class="form-text text-muted">
+                If more then one symptom. Please enter comma seperated values symptoms e.g thyroid, weakness
+              </small>
+            <div class="form-control-feedback" [ngClass]="{
+              'valid-feedback' : symptoms.valid && (symptoms.dirty || symptoms.touched),
+              'invalid-feedback' : symptoms.invalid && (symptoms.dirty || symptoms.touched)
+            }"
+
+             *ngIf="symptoms.errors && (symptoms.dirty || symptoms.touched)">
+              <p *ngIf="symptoms.errors.required">Symptom is required</p>
+            </div>
+          </div>
+
+
+          <div class="form-group" >
+            <label>Medicines:</label>
+            <input [ngClass]="{
+              'is-valid' : medicines.valid && (medicines.dirty || medicines.touched),
+              'is-invalid' : medicines.invalid && (medicines.dirty || medicines.touched)
+            }" type="text" class="form-control" formControlName="medicines" required />
+            <small id="medicinesBlock" class="form-text text-muted">
+                If more then one medicines. Please enter comma seperated medicines e.g citrizine, duonose
+              </small>
+            <div class="form-control-feedback" [ngClass]="{
+              'valid-feedback' : medicines.valid && (medicines.dirty || medicines.touched),
+              'invalid-feedback' : medicines.invalid && (medicines.dirty || medicines.touched)
+            }" *ngIf="medicines.errors && (medicines.dirty || medicines.touched)">
+              <p *ngIf="medicines.errors.required">Medicine is required</p>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <label>Doctors:</label>
+            <input  type="text" class="form-control" formControlName="doctors" />
+            <small id="medicinesBlock" class="form-text text-muted">
+                If more then one doctors. Please enter comma seperated doctor names.
+              </small>
+          </div>
+          <div class="form-group">
+            <label>Comments:</label>
+            <textarea class="form-control" aria-label="comments textarea" formControlName="comments"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary float-right" [disabled]="suggestionForm.invalid">Submit
+          </button>
+          <button type="button" class="btn btn-primary" (click)="resetSubmissionForm()">Reset
+          </button>
+        </form>
+    </div>
+    
+  </div>
+</div>
+<!-- <pre>{{suggestionForm.value | json}}</pre>
+<pre>dirty : {{symptoms.dirty}}</pre>
+<pre>pristine : {{symptoms.pristine}}</pre>
+<pre>touched : {{symptoms.touched}}</pre>
+<pre>untouched : {{symptoms.untouched}}</pre>
+<pre>valid : {{symptoms.valid}}</pre>
+<pre>invalid : {{symptoms.invalid}}</pre>
+<pre>error : {{symptoms.error}}</pre> -->
