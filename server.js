@@ -8,11 +8,11 @@ const {UserSubmissions} = require('./models/usersubmissions');
 const port = process.env.PORT || 3000;
 
 const app = express();
-app.use(express.static(__dirname + '/dist/public'));
+app.use(express.static(__dirname + '/dist'));
 
 app.use(bodyparser.json());
 app.get('/*', function (req, res) {
-  res.sendfile(path.join(__dirname + '/dist/public/index.html'));
+  res.sendfile(path.join(__dirname + '/dist/index.html'));
 })
 
 app.post('/getsuggestion', (req, res) => {
