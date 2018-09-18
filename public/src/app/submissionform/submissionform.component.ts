@@ -2,6 +2,7 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
 import {PostSuggestionService} from './postsuggestion.service';
 
+
 @Component({
   selector: 'app-submissionform',
   templateUrl: './submissionform.component.html',
@@ -20,7 +21,9 @@ showNotification:boolean = false;
 className: String;
 notificationMessage: String;
 
-  constructor(private _postSuggestionService : PostSuggestionService) { }
+  constructor(private _postSuggestionService : PostSuggestionService) { 
+    
+  }
 
   ngOnInit() {
     this.createFormControls();

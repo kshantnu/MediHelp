@@ -1,19 +1,28 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {SearchResult} from '../models/searchresult';
+import {environment} from '../../environments/environment';
+
 //import 'rxjs/add/operator/toPromise';
 
 @Injectable({providedIn: 'root'})
 export class FetchResultService {
   queryArray : Array < String > = [];
   fetchedResults : Array < SearchResult >;
-  constructor(private http : HttpClient) {}
+  baseUrl:String;
+  constructor(private http : HttpClient) {
+    if(!environment.production) {
+      this.baseUrl = 'http://localhost:3000/';
+    } else {
+     this.baseUrl = 'https://afternoon-atoll-50980.herokuapp.com/';
+    }
+  }
 
   fetchResult(queryString : String) : Promise < any > {
     if(!queryString) return;
     this.queryArray = [];
     this.queryArray = queryString.split(',').map(item => item.trim());
-    const url: string = "http://localhost:3000/getsuggestion";
+    const url: string = `${this.baseUrl}submitsuggestion`;
     const promise = new Promise((resolve, reject) => {
       this
         .http
