@@ -251,11 +251,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _searchresultlist_searchresultlist_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./searchresultlist/searchresultlist.component */ "./src/app/searchresultlist/searchresultlist.component.ts");
 /* harmony import */ var _common_components_notification_alert_notification_alert_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common_components/notification-alert/notification-alert.component */ "./src/app/common_components/notification-alert/notification-alert.component.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./navigation/navigation.component */ "./src/app/navigation/navigation.component.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _about_me_about_me_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./about-me/about-me.component */ "./src/app/about-me/about-me.component.ts");
+/* harmony import */ var _searchcount_searchcount_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./searchcount/searchcount.component */ "./src/app/searchcount/searchcount.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./navigation/navigation.component */ "./src/app/navigation/navigation.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _about_me_about_me_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./about-me/about-me.component */ "./src/app/about-me/about-me.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -271,7 +272,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-//import { FetchResultService } from './searchbar/fetchresult.service';
+
 
 
 
@@ -289,15 +290,16 @@ var AppModule = /** @class */ (function () {
                 _submissionform_submissionform_component__WEBPACK_IMPORTED_MODULE_5__["SubmissionformComponent"],
                 _searchresultlist_searchresultlist_component__WEBPACK_IMPORTED_MODULE_6__["SearchresultlistComponent"],
                 _common_components_notification_alert_notification_alert_component__WEBPACK_IMPORTED_MODULE_7__["NotificationAlertComponent"],
-                _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_10__["NavigationComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_11__["HeaderComponent"],
-                _about_me_about_me_component__WEBPACK_IMPORTED_MODULE_13__["AboutMeComponent"]
+                _searchcount_searchcount_component__WEBPACK_IMPORTED_MODULE_9__["SearchcountComponent"],
+                _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_11__["NavigationComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_12__["HeaderComponent"],
+                _about_me_about_me_component__WEBPACK_IMPORTED_MODULE_14__["AboutMeComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["ReactiveFormsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_10__["ReactiveFormsModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_13__["AppRoutingModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -601,7 +603,7 @@ var FetchResultService = /** @class */ (function () {
             this.baseUrl = 'http://localhost:3000/';
         }
         else {
-            this.baseUrl = 'https://afternoon-atoll-50980.herokuapp.com/';
+            this.baseUrl = 'https://medicinehelp.herokuapp.com/';
         }
     }
     FetchResultService.prototype.fetchResult = function (queryString) {
@@ -726,6 +728,69 @@ var SearchbarComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_fetchresult_service__WEBPACK_IMPORTED_MODULE_1__["FetchResultService"]])
     ], SearchbarComponent);
     return SearchbarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/searchcount/searchcount.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/searchcount/searchcount.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NlYXJjaGNvdW50L3NlYXJjaGNvdW50LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/searchcount/searchcount.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/searchcount/searchcount.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<a href=\"#\">Jaundice <span class=\"badge badge-primary\">5</span></a><br>\n<a href=\"#\">Nausea <span class=\"badge badge-primary\">10</span></a><br>\n<a href=\"#\">Sinus <span class=\"badge badge-primary\">2</span></a>\n"
+
+/***/ }),
+
+/***/ "./src/app/searchcount/searchcount.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/searchcount/searchcount.component.ts ***!
+  \******************************************************/
+/*! exports provided: SearchcountComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchcountComponent", function() { return SearchcountComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SearchcountComponent = /** @class */ (function () {
+    function SearchcountComponent() {
+    }
+    SearchcountComponent.prototype.ngOnInit = function () {
+    };
+    SearchcountComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-searchcount',
+            template: __webpack_require__(/*! ./searchcount.component.html */ "./src/app/searchcount/searchcount.component.html"),
+            styles: [__webpack_require__(/*! ./searchcount.component.css */ "./src/app/searchcount/searchcount.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SearchcountComponent);
+    return SearchcountComponent;
 }());
 
 
@@ -926,7 +991,7 @@ var PostSuggestionService = /** @class */ (function () {
             this.baseUrl = 'http://localhost:3000/';
         }
         else {
-            this.baseUrl = 'https://afternoon-atoll-50980.herokuapp.com/';
+            this.baseUrl = 'https://medicinehelp.herokuapp.com/';
         }
     }
     PostSuggestionService.prototype.submitSuggestion = function (formValues) {

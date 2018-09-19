@@ -17,7 +17,7 @@ export class PostSuggestionService {
    if(!environment.production) {
      this.baseUrl = 'http://localhost:3000/';
    } else {
-    this.baseUrl = 'https://afternoon-atoll-50980.herokuapp.com/';
+    this.baseUrl = 'https://medicinehelp.herokuapp.com/';
    }
   }
   submitSuggestion(formValues) : Promise < any > {

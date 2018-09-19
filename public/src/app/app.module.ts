@@ -7,7 +7,7 @@ import { SubmissionformComponent } from './submissionform/submissionform.compone
 import { SearchresultlistComponent } from './searchresultlist/searchresultlist.component';
 import { NotificationAlertComponent } from './common_components/notification-alert/notification-alert.component';
 import { HttpClientModule }    from '@angular/common/http';
-//import { FetchResultService } from './searchbar/fetchresult.service';
+import { SearchcountComponent } from './searchcount/searchcount.component'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,6 +24,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SubmissionformComponent,
     SearchresultlistComponent,
     NotificationAlertComponent,
+    SearchcountComponent,
     NavigationComponent,
     HeaderComponent,
     AboutMeComponent
