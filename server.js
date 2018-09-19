@@ -32,6 +32,7 @@ app.post('/getsuggestion', (req, res) => {
   Promise
     .all(queries)
     .then(resultArray => {
+      console.log('sssss',resultArray);
       res.send(resultArray);
     })
 })

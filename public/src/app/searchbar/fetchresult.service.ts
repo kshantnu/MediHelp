@@ -21,8 +21,8 @@ export class FetchResultService {
   fetchResult(queryString : String) : Promise < any > {
     if(!queryString) return;
     this.queryArray = [];
-    this.queryArray = queryString.split(',').map(item => item.trim());
-    const url: string = `${this.baseUrl}submitsuggestion`;
+    this.queryArray = queryString.split(',').map(item => item.trim().toLowerCase());
+    const url: string = `${this.baseUrl}getsuggestion`;
     const promise = new Promise((resolve, reject) => {
       this
         .http

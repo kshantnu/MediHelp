@@ -38,9 +38,9 @@ export class PostSuggestionService {
 
   prepareRequestObject(formValues) {
     
-      const symptoms = formValues.symptoms && formValues.symptoms.split(',').map(item => item.trim());
-      const medicines = formValues.medicines && formValues.medicines.split(',').map(item => item.trim());
-      const doctors = formValues.doctors && formValues.doctors.split(',').map(item => item.trim());
+      const symptoms = formValues.symptoms && formValues.symptoms.split(',').map((item : String) => item.trim().toLowerCase());
+      const medicines = formValues.medicines && formValues.medicines.split(',').map((item : String) => item.trim().toLowerCase());
+      const doctors = formValues.doctors && formValues.doctors.split(',').map((item : String) => item.trim().toLowerCase());
       const comments = formValues.comments;
       const requestObject = {
         symptoms,
