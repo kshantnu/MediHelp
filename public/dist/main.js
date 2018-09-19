@@ -41,7 +41,7 @@ module.exports = "\n\n.about{\n    margin: 6em 0;\n    padding: 1em;\n    positi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"about\" id=\"about\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-4 col-md-4 col-sm-12\">\n                <img src=\"assets/images/myself.jpg\" class=\"img-fluid\">\n                <span class=\"text-justify\">Web Devloper</span>\n            </div>\n            <div class=\"col-lg-8 col-md-8 col-sm-12 desc\">\n\n                <h3>Kumar Shantnu</h3>\n                <p>\n                    Web developer | Freelancer | Problem Solver | Lifelong learner | Football fan | Foodie but Disastrous cook.\n                </p>\n                <p>\n                    You can reach out to me on:\n                    \n                </p>\n                <ul>\n                        <li>                           \n                            <a mailto=\"mailtoshantnu@gmail.com\">mailtoshantnu@gmail.com</a> \n                        </li>\n                        <li>\n                           <a href=\"https://www.linkedin.com/in/kumar-shantnu/\">linkedin</a> \n                        </li>\n                    </ul>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"about\" id=\"about\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-4 col-md-4 col-sm-12\">\n                <img src=\"assets/images/myself.jpg\" class=\"img-fluid\">\n                <span class=\"text-justify\">Web Devloper</span>\n            </div>\n            <div class=\"col-lg-8 col-md-8 col-sm-12 desc\">\n\n                <h3>Kumar Shantnu</h3>\n                <p>\n                    Web developer | Freelancer | Problem Solver | Lifelong learner | Football fan | Foodie but bad cook.\n                </p>\n                <p>\n                    You can reach out to me on:\n                    \n                </p>\n                <ul>\n                        <li>                           \n                            <a mailto=\"mailtoshantnu@gmail.com\">mailtoshantnu@gmail.com</a> \n                        </li>\n                        <li>\n                           <a href=\"https://www.linkedin.com/in/kumar-shantnu/\">linkedin</a> \n                        </li>\n                    </ul>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -388,7 +388,7 @@ var NotificationAlertComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/* .header{\n    background-image: url(\"../../assets/images/Medical-Science.png\");\n    background-attachment: fixed;\n    background-size: cover;\n    background-position: center;\n}\n.overlay{\n    position: absolute;\n    min-height: 100%;\n    min-width: 100%;\n    left: 0;\n    top: 0;\n    background: rgba(244, 244, 244, 0.79);\n   }\n\n   .description{\n    top:14%;\n    margin: auto;\n    padding: 6em;\n}\n.description h1{\n color:#1ebb42 ;\n}\n.description p{\n color:#666;\n font-size: 20px;\n line-height: 1.5;\n} */\n\n\n\n/* .header{\n    background-image: url('../../assets/images/Medical-Science.png');\n    background-attachment: fixed;\n    background-size: cover;\n    background-position: center;\n   } */\n\n\n\n.overlay{\n    position: absolute;\n    min-height: 100%;\n    min-width: 100%;\n    left: 0;\n    top: 0;\n    background: rgba(244, 244, 244, 0.79);\n   }\n\n\n\n.description{\n    position: absolute;\n    top: 30%;\n    margin: auto;\n    padding: 2em;\n}\n\n\n\n.description h1{\n color:#F97300 ;\n}\n\n\n\n.description p{\n color:#666;\n font-size: 20px;\n width: 100%;\n line-height: 1.5;\n}\n\n\n\n.description button{\n border:1px  solid #F97300;\n background:#F97300;\n color:#fff;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBMkJJOzs7O0FBSUo7Ozs7O09BS087Ozs7QUFFSjtJQUNDLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLFFBQVE7SUFDUixPQUFPO0lBQ1Asc0NBQXNDO0lBQ3RDOzs7O0FBRUQ7SUFDQyxtQkFBbUI7SUFDbkIsU0FBUztJQUNULGFBQWE7SUFDYixhQUFhO0NBQ2hCOzs7O0FBQ0Q7Q0FDQyxlQUFlO0NBQ2Y7Ozs7QUFDRDtDQUNDLFdBQVc7Q0FDWCxnQkFBZ0I7Q0FDaEIsWUFBWTtDQUNaLGlCQUFpQjtDQUNqQjs7OztBQUNEO0NBQ0MsMEJBQTBCO0NBQzFCLG1CQUFtQjtDQUNuQixXQUFXO0NBQ1giLCJmaWxlIjoic3JjL2FwcC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi8qIC5oZWFkZXJ7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiLi4vLi4vYXNzZXRzL2ltYWdlcy9NZWRpY2FsLVNjaWVuY2UucG5nXCIpO1xuICAgIGJhY2tncm91bmQtYXR0YWNobWVudDogZml4ZWQ7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG59XG4ub3ZlcmxheXtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWluLWhlaWdodDogMTAwJTtcbiAgICBtaW4td2lkdGg6IDEwMCU7XG4gICAgbGVmdDogMDtcbiAgICB0b3A6IDA7XG4gICAgYmFja2dyb3VuZDogcmdiYSgyNDQsIDI0NCwgMjQ0LCAwLjc5KTtcbiAgIH1cblxuICAgLmRlc2NyaXB0aW9ue1xuICAgIHRvcDoxNCU7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIHBhZGRpbmc6IDZlbTtcbn1cbi5kZXNjcmlwdGlvbiBoMXtcbiBjb2xvcjojMWViYjQyIDtcbn1cbi5kZXNjcmlwdGlvbiBwe1xuIGNvbG9yOiM2NjY7XG4gZm9udC1zaXplOiAyMHB4O1xuIGxpbmUtaGVpZ2h0OiAxLjU7XG59ICovXG5cblxuXG4vKiAuaGVhZGVye1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9NZWRpY2FsLVNjaWVuY2UucG5nJyk7XG4gICAgYmFja2dyb3VuZC1hdHRhY2htZW50OiBmaXhlZDtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgIH0gKi9cblxuICAgLm92ZXJsYXl7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1pbi1oZWlnaHQ6IDEwMCU7XG4gICAgbWluLXdpZHRoOiAxMDAlO1xuICAgIGxlZnQ6IDA7XG4gICAgdG9wOiAwO1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMjQ0LCAyNDQsIDI0NCwgMC43OSk7XG4gICB9XG5cbiAgIC5kZXNjcmlwdGlvbntcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAzMCU7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIHBhZGRpbmc6IDJlbTtcbn1cbi5kZXNjcmlwdGlvbiBoMXtcbiBjb2xvcjojRjk3MzAwIDtcbn1cbi5kZXNjcmlwdGlvbiBwe1xuIGNvbG9yOiM2NjY7XG4gZm9udC1zaXplOiAyMHB4O1xuIHdpZHRoOiAxMDAlO1xuIGxpbmUtaGVpZ2h0OiAxLjU7XG59XG4uZGVzY3JpcHRpb24gYnV0dG9ue1xuIGJvcmRlcjoxcHggIHNvbGlkICNGOTczMDA7XG4gYmFja2dyb3VuZDojRjk3MzAwO1xuIGNvbG9yOiNmZmY7XG59XG4iXX0= */"
+module.exports = "\n/* .header{\n    background-image: url(\"../../assets/images/Medical-Science.png\");\n    background-attachment: fixed;\n    background-size: cover;\n    background-position: center;\n}\n.overlay{\n    position: absolute;\n    min-height: 100%;\n    min-width: 100%;\n    left: 0;\n    top: 0;\n    background: rgba(244, 244, 244, 0.79);\n   }\n\n   .description{\n    top:14%;\n    margin: auto;\n    padding: 6em;\n}\n.description h1{\n color:#1ebb42 ;\n}\n.description p{\n color:#666;\n font-size: 20px;\n line-height: 1.5;\n} */\n\n\n\n/* .header{\n    background-image: url('../../assets/images/Medical-Science.png');\n    background-attachment: fixed;\n    background-size: cover;\n    background-position: center;\n   } */\n\n\n\n.overlay{\n    position: absolute;\n    min-height: 100%;\n    min-width: 100%;\n    left: 0;\n    top: 0;\n    background: rgba(244, 244, 244, 0.79);\n   }\n\n\n\n.description{\n    position: absolute;\n    top: 30%;\n    margin: auto;\n    padding: 2em;\n}\n\n\n\n.description h1{\n color:#1ebb42 ;\n}\n\n\n\n.description p{\n color:#666;\n font-size: 20px;\n width: 100%;\n line-height: 1.5;\n}\n\n\n\n.description button{\n border:1px  solid #1ebb42;\n background:#1ebb42;\n color:#fff;\n}\n\n\n\n.modal.fade .modal-dialog {\n    transition: -webkit-transform 0.3s ease-out;\n    transition: transform 0.3s ease-out;\n    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;\n  }\n\n\n\n.modal.in .modal-dialog {\n  \n  }\n\n\n\n#exampleModalLongTitle {\n      color: #1ebb42;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lBMkJJOzs7O0FBSUo7Ozs7O09BS087Ozs7QUFFSjtJQUNDLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLFFBQVE7SUFDUixPQUFPO0lBQ1Asc0NBQXNDO0lBQ3RDOzs7O0FBRUQ7SUFDQyxtQkFBbUI7SUFDbkIsU0FBUztJQUNULGFBQWE7SUFDYixhQUFhO0NBQ2hCOzs7O0FBQ0Q7Q0FDQyxlQUFlO0NBQ2Y7Ozs7QUFDRDtDQUNDLFdBQVc7Q0FDWCxnQkFBZ0I7Q0FDaEIsWUFBWTtDQUNaLGlCQUFpQjtDQUNqQjs7OztBQUNEO0NBQ0MsMEJBQTBCO0NBQzFCLG1CQUFtQjtDQUNuQixXQUFXO0NBQ1g7Ozs7QUFFRDtJQUlZLDRDQUFvQztJQUFwQyxvQ0FBb0M7SUFBcEMscUVBQW9DO0dBQzdDOzs7O0FBRUQ7O0dBRUM7Ozs7QUFFRDtNQUNJLGVBQWU7R0FDbEIiLCJmaWxlIjoic3JjL2FwcC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi8qIC5oZWFkZXJ7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiLi4vLi4vYXNzZXRzL2ltYWdlcy9NZWRpY2FsLVNjaWVuY2UucG5nXCIpO1xuICAgIGJhY2tncm91bmQtYXR0YWNobWVudDogZml4ZWQ7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG59XG4ub3ZlcmxheXtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWluLWhlaWdodDogMTAwJTtcbiAgICBtaW4td2lkdGg6IDEwMCU7XG4gICAgbGVmdDogMDtcbiAgICB0b3A6IDA7XG4gICAgYmFja2dyb3VuZDogcmdiYSgyNDQsIDI0NCwgMjQ0LCAwLjc5KTtcbiAgIH1cblxuICAgLmRlc2NyaXB0aW9ue1xuICAgIHRvcDoxNCU7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIHBhZGRpbmc6IDZlbTtcbn1cbi5kZXNjcmlwdGlvbiBoMXtcbiBjb2xvcjojMWViYjQyIDtcbn1cbi5kZXNjcmlwdGlvbiBwe1xuIGNvbG9yOiM2NjY7XG4gZm9udC1zaXplOiAyMHB4O1xuIGxpbmUtaGVpZ2h0OiAxLjU7XG59ICovXG5cblxuXG4vKiAuaGVhZGVye1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vLi4vYXNzZXRzL2ltYWdlcy9NZWRpY2FsLVNjaWVuY2UucG5nJyk7XG4gICAgYmFja2dyb3VuZC1hdHRhY2htZW50OiBmaXhlZDtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgIH0gKi9cblxuICAgLm92ZXJsYXl7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1pbi1oZWlnaHQ6IDEwMCU7XG4gICAgbWluLXdpZHRoOiAxMDAlO1xuICAgIGxlZnQ6IDA7XG4gICAgdG9wOiAwO1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMjQ0LCAyNDQsIDI0NCwgMC43OSk7XG4gICB9XG5cbiAgIC5kZXNjcmlwdGlvbntcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAzMCU7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIHBhZGRpbmc6IDJlbTtcbn1cbi5kZXNjcmlwdGlvbiBoMXtcbiBjb2xvcjojMWViYjQyIDtcbn1cbi5kZXNjcmlwdGlvbiBwe1xuIGNvbG9yOiM2NjY7XG4gZm9udC1zaXplOiAyMHB4O1xuIHdpZHRoOiAxMDAlO1xuIGxpbmUtaGVpZ2h0OiAxLjU7XG59XG4uZGVzY3JpcHRpb24gYnV0dG9ue1xuIGJvcmRlcjoxcHggIHNvbGlkICMxZWJiNDI7XG4gYmFja2dyb3VuZDojMWViYjQyO1xuIGNvbG9yOiNmZmY7XG59XG5cbi5tb2RhbC5mYWRlIC5tb2RhbC1kaWFsb2cge1xuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogLXdlYmtpdC10cmFuc2Zvcm0gMC4zcyBlYXNlLW91dDtcbiAgICAgICAtbW96LXRyYW5zaXRpb246IC1tb3otdHJhbnNmb3JtIDAuM3MgZWFzZS1vdXQ7XG4gICAgICAgICAtby10cmFuc2l0aW9uOiAtby10cmFuc2Zvcm0gMC4zcyBlYXNlLW91dDtcbiAgICAgICAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjNzIGVhc2Utb3V0O1xuICB9XG4gIFxuICAubW9kYWwuaW4gLm1vZGFsLWRpYWxvZyB7XG4gIFxuICB9XG5cbiAgI2V4YW1wbGVNb2RhbExvbmdUaXRsZSB7XG4gICAgICBjb2xvcjogIzFlYmI0MjtcbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -399,7 +399,7 @@ module.exports = "\n/* .header{\n    background-image: url(\"../../assets/images
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <header class=\"header\">\n    <div class=\"overlay\"></div>\n    <div class=\"container\">\n        <div class=\"description \">\n            <div clas=\"row\">\n                <div class=\"col-lg-8 col-md-8 col-sm-12\">\n                    <h1> Hello ,Welcome To MediHelp\n                    </h1>\n                    <h2>\n                        <p>\n                            Sharing is Caring. MediHelp is based on the same principle.\n                        </p>\n                    </h2>\n                    <h2>\n                        <p>Watch the video to know how you can help and be helped !!</p>\n                    </h2>\n                </div>\n                 <div class=\"col-lg-8 col-md-8 col-sm-6\">\n                    <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6wD4V0rvlDI\" frameborder=\"0\"\n                        allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n                </div> \n            </div>\n\n\n        </div>\n    </div>\n</header> -->\n\n<header class=\"header\">\n    <div><div class=\"overlay\"></div>\n    <div class=\"container\">\n        <div class=\"description\">\n            <div clas=\"row\">\n                <div class=\"col-lg-12 col-md-12 col-sm-12\">\n                    <h1> Hello ,Welcome To MediHelp </h1>\n                        <p> Sharing is Caring. MediHelp is based on the same principle.\n                        </p>\n                        <button class=\"btn btn-outline-secondary btn-lg\">See more</button> \n                </div>\n                \n            </div>\n            \n        </div>\n    </div></div>\n</header>"
+module.exports = "<header class=\"header\">\n    <div class=\"overlay\"></div>\n    <div class=\"container\">\n        <div class=\"description\">\n            <div clas=\"row\">\n                <div class=\"col-lg-12 col-md-12 col-sm-12\">\n                    <h1> Hello ,Welcome To MediHelp </h1>\n                    <p> Sharing is Caring. This is what MediHelp is all about.\n                    </p>\n                    <button class=\"btn btn-outline-secondary btn-lg\" data-toggle=\"modal\" data-target=\"#exampleModalCenter\">Watch Video</button>\n                </div>\n\n            </div>\n\n        </div>\n    </div>\n    \n</header>\n\n      \n      <!-- Modal -->\n      <div class=\"modal fade\" id=\"exampleModalCenter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalCenterTitle\" aria-hidden=\"true\">\n        <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\n          <div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <h5 class=\"modal-title\" id=\"exampleModalLongTitle\">MediHelp Demo</h5>\n              <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                <span aria-hidden=\"true\">&times;</span>\n              </button>\n            </div>\n            <div class=\"modal-body\">\n                    <iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/6wD4V0rvlDI\" frameborder=\"0\"\n                        allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n            </div>\n            \n          </div>\n        </div>\n      </div>"
 
 /***/ }),
 
@@ -487,7 +487,7 @@ module.exports = ".navbar{ background:#1ebb42;}\n.nav-link , .navbar-brand{ colo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top\">\n    <a class=\"navbar-brand\" [routerLinkActive]=\"['active']\"\n    [routerLink]=\"['./home']\">MediHelp</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n        aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse \" id=\"navbarSupportedContent\">\n        \n        <div class=\"input-group mb-3 navigation-search\">\n            <input  type=\"text\" #query class=\"form-control\" placeholder=\"Search by medicines, symptoms or doctors\" aria-label=\"Recipient's username\" aria-describedby=\"basic-addon2\">\n            <div class=\"input-group-append\">\n                <button class='btn btn-lg search-suggestion' (click) = \"onSearch(query.value)\">\n                    <i class=\"fas fa-search\"></i>\n                 </button>\n        </div>\n      </div>\n        <ul class=\"navbar-nav mr-4\">\n            <li class=\"nav-item\">\n                <a class=\"nav-link\"  [routerLinkActive]=\"['active']\"\n                [routerLink]=\"['./home']\">Home</a> </li> \n                \n            <li class=\"nav-item\">\n                <a class=\"nav-link \"  [routerLinkActive]=\"['active']\"\n                [routerLink]=\"['./suggestionform']\">Give Suggestions</a> </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link \"  [routerLinkActive]=\"['active']\"\n                [routerLink]=\"['./aboutme']\"> About Me</a> </li>\n        </ul>\n    </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top\">\n    <a class=\"navbar-brand\" [routerLinkActive]=\"['active']\"\n    [routerLink]=\"['./home']\">MediHelp</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"\n        aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse \" id=\"navbarSupportedContent\">\n        \n        <div class=\"input-group mb-3 navigation-search\">\n            <input [value] = \"textValue ? textValue : ''\" type=\"text\" #query class=\"form-control\" placeholder=\"Search by medicines, symptoms or doctors\" aria-label=\"Recipient's username\" aria-describedby=\"basic-addon2\">\n            <div class=\"input-group-append\">\n                <button class='btn btn-lg search-suggestion' (click) = \"onSearch(query.value)\">\n                    <i class=\"fas fa-search\"></i>\n                 </button>\n        </div>\n      </div>\n        <ul class=\"navbar-nav mr-4\">\n            <li class=\"nav-item\">\n                <a class=\"nav-link\"  [routerLinkActive]=\"['active']\"\n                [routerLink]=\"['./home']\">Home</a> </li> \n                \n            <li class=\"nav-item\">\n                <a class=\"nav-link \"  [routerLinkActive]=\"['active']\"\n                [routerLink]=\"['./suggestionform']\">Give Suggestions</a> </li>\n            <li class=\"nav-item\">\n                <a class=\"nav-link \"  [routerLinkActive]=\"['active']\"\n                [routerLink]=\"['./aboutme']\"> About Me</a> </li>\n        </ul>\n    </div>\n</nav>\n"
 
 /***/ }),
 
@@ -515,7 +515,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var NavigationComponent = /** @class */ (function () {
+    //query:String;
     function NavigationComponent(router, route) {
+        // This workaround is because on intial pageload we wont receive query string
         this.router = router;
         this.route = route;
     }
@@ -525,7 +527,16 @@ var NavigationComponent = /** @class */ (function () {
             .route
             .queryParams
             .subscribe(function (params) {
-            _this.textValue = params.term;
+            var location = window.location.href.indexOf('?');
+            if (location > -1) {
+                var term = window.location.href.split('?')[1];
+                if (term.indexOf('term=') > -1) {
+                    if (term) {
+                        var decodedQueryParam = term.split('=')[1];
+                        _this.textValue = decodeURIComponent(decodedQueryParam);
+                    }
+                }
+            }
         });
     };
     NavigationComponent.prototype.onSearch = function (term) {
@@ -561,6 +572,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FetchResultService", function() { return FetchResultService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -570,6 +582,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 //import 'rxjs/add/operator/toPromise';
@@ -584,14 +597,20 @@ var FetchResultService = /** @class */ (function () {
                     .indexOf(obj[prop]) === pos;
             });
         };
+        if (!_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].production) {
+            this.baseUrl = 'http://localhost:3000/';
+        }
+        else {
+            this.baseUrl = 'https://afternoon-atoll-50980.herokuapp.com/';
+        }
     }
     FetchResultService.prototype.fetchResult = function (queryString) {
         var _this = this;
         if (!queryString)
             return;
         this.queryArray = [];
-        this.queryArray = queryString.split(',').map(function (item) { return item.trim(); });
-        var url = "http://localhost:3000/getsuggestion";
+        this.queryArray = queryString.split(',').map(function (item) { return item.trim().toLowerCase(); });
+        var url = this.baseUrl + "getsuggestion";
         var promise = new Promise(function (resolve, reject) {
             _this
                 .http
@@ -827,7 +846,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var SearchresultlistComponent = /** @class */ (function () {
-    function SearchresultlistComponent(route, _fetchResultService) {
+    function SearchresultlistComponent(router, route, _fetchResultService) {
+        this.router = router;
         this.route = route;
         this._fetchResultService = _fetchResultService;
         this.showNotification = false;
@@ -865,7 +885,7 @@ var SearchresultlistComponent = /** @class */ (function () {
     };
     SearchresultlistComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({ selector: 'app-searchresultlist', template: __webpack_require__(/*! ./searchresultlist.component.html */ "./src/app/searchresultlist/searchresultlist.component.html"), styles: [__webpack_require__(/*! ./searchresultlist.component.css */ "./src/app/searchresultlist/searchresultlist.component.css")] }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _searchbar_fetchresult_service__WEBPACK_IMPORTED_MODULE_2__["FetchResultService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _searchbar_fetchresult_service__WEBPACK_IMPORTED_MODULE_2__["FetchResultService"]])
     ], SearchresultlistComponent);
     return SearchresultlistComponent;
 }());
@@ -886,6 +906,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostSuggestionService", function() { return PostSuggestionService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -897,14 +918,21 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var PostSuggestionService = /** @class */ (function () {
     function PostSuggestionService(http) {
         this.http = http;
+        if (!_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].production) {
+            this.baseUrl = 'http://localhost:3000/';
+        }
+        else {
+            this.baseUrl = 'https://afternoon-atoll-50980.herokuapp.com/';
+        }
     }
     PostSuggestionService.prototype.submitSuggestion = function (formValues) {
         var _this = this;
         var requestObject = this.prepareRequestObject(formValues);
-        var url = "http://localhost:3000/submitsuggestion";
+        var url = this.baseUrl + "submitsuggestion";
         var promise = new Promise(function (resolve, reject) {
             _this.http.post(url, requestObject).toPromise().then(function (response) {
                 if (response._id)
@@ -918,9 +946,9 @@ var PostSuggestionService = /** @class */ (function () {
     PostSuggestionService.prototype.resetSubmissionForm = function () {
     };
     PostSuggestionService.prototype.prepareRequestObject = function (formValues) {
-        var symptoms = formValues.symptoms && formValues.symptoms.split(',').map(function (item) { return item.trim(); });
-        var medicines = formValues.medicines && formValues.medicines.split(',').map(function (item) { return item.trim(); });
-        var doctors = formValues.doctors && formValues.doctors.split(',').map(function (item) { return item.trim(); });
+        var symptoms = formValues.symptoms && formValues.symptoms.split(',').map(function (item) { return item.trim().toLowerCase(); });
+        var medicines = formValues.medicines && formValues.medicines.split(',').map(function (item) { return item.trim().toLowerCase(); });
+        var doctors = formValues.doctors && formValues.doctors.split(',').map(function (item) { return item.trim().toLowerCase(); });
         var comments = formValues.comments;
         var requestObject = {
             symptoms: symptoms,
