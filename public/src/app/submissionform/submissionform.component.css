@@ -5,3 +5,10 @@
 .alert {
     margin-top: 6em;
 }
+
+@media (max-width: 576px){ 
+   
+    .suggestion-form {
+      margin: 6em 0px
+  }
+}

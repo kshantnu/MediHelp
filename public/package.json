@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "buildprod" : "ng build --prod",
+    "buildprod": "ng build --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -13,11 +13,11 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~7.0.0-beta.2",
-    "@angular/compiler-cli": "~7.0.0-beta.0",
     "@angular/animations": "~7.0.0-beta.0",
+    "@angular/cli": "~7.0.0-beta.2",
     "@angular/common": "~7.0.0-beta.0",
     "@angular/compiler": "~7.0.0-beta.0",
+    "@angular/compiler-cli": "~7.0.0-beta.0",
     "@angular/core": "~7.0.0-beta.0",
     "@angular/forms": "~7.0.0-beta.0",
     "@angular/http": "~7.0.0-beta.0",
@@ -28,9 +28,9 @@
     "core-js": "^2.5.4",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4",
-    "rxjs": "~6.3.0",
-    "zone.js": "~0.8.26",
-    "typescript": "~3.0.1"
+    "rxjs": "^6.3.2",
+    "typescript": "~3.0.1",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.9.0-beta.1",

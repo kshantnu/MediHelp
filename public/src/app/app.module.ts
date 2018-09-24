@@ -8,11 +8,13 @@ import { SearchresultlistComponent } from './searchresultlist/searchresultlist.c
 import { NotificationAlertComponent } from './common_components/notification-alert/notification-alert.component';
 import { HttpClientModule }    from '@angular/common/http';
 import { SearchcountComponent } from './searchcount/searchcount.component'; 
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule , FormsModule} from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HeaderComponent } from './header/header.component';
 import {AppRoutingModule} from './app-routing.module';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { AutosuggestionDirective } from './navigation/autosuggestion.directive';
+import { CommaseperatorPipe } from './navigation/commaseperator.pipe';
 
 
 
@@ -27,12 +29,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SearchcountComponent,
     NavigationComponent,
     HeaderComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    AutosuggestionDirective,
+    CommaseperatorPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

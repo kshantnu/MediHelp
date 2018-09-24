@@ -28,6 +28,7 @@ notificationMessage: String;
   ngOnInit() {
     this.createFormControls();
     this.createFormGroup();
+    
   }
   createFormControls() {
     this.symptoms = new FormControl('',Validators.required);

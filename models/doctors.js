@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-const Symptoms = mongoose.model('Symptoms',{
-    symptoms: {
+const Doctors = mongoose.model('Doctors',{
+    doctors: {
         type: [{type: String}],
         required: true,
         trim: true,
     }
 });
 module.exports = {
-    Symptoms
+    Doctors
 }

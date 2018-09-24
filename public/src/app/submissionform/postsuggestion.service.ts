@@ -25,22 +25,18 @@ export class PostSuggestionService {
      const url: string = `${this.baseUrl}submitsuggestion`; 
       const promise = new Promise ((resolve,reject) => {
         this.http.post(url,requestObject).toPromise().then((response:SuccessResult) => {
-          if(response._id)resolve(response);
+          if(response && response[3]._id)resolve(response);
           else reject(response);
         }).catch(err => reject(err));
       });
       return promise;
   }
 
-  resetSubmissionForm() {
-
-  }
-
   prepareRequestObject(formValues) {
     
-      const symptoms = formValues.symptoms && formValues.symptoms.split(',').map((item : String) => item.trim().toLowerCase());
-      const medicines = formValues.medicines && formValues.medicines.split(',').map((item : String) => item.trim().toLowerCase());
-      const doctors = formValues.doctors && formValues.doctors.split(',').map((item : String) => item.trim().toLowerCase());
+      const symptoms = formValues.symptoms ? formValues.symptoms.split(',').map((item : String) => item.trim().toLowerCase()) : [];
+      const medicines = formValues.medicines ? formValues.medicines.split(',').map((item : String) => item.trim().toLowerCase()) : [];
+      const doctors = formValues.doctors ? formValues.doctors.split(',').map((item : String) => item.trim().toLowerCase()) : [];
       const comments = formValues.comments;
       const requestObject = {
         symptoms,
@@ -49,15 +45,5 @@ export class PostSuggestionService {
         comments
       };
       return requestObject;
-      
-
-
-
-    //   {
-  //     "symptoms": ["breathing problem", "dizziness"],
-  //     "medicines": ["citrizine"],
-  //     "doctors": ["shantnu","chandani"],
-  //     "comments": "hdfhehfghghjgghj"
-  // }
   }
 }

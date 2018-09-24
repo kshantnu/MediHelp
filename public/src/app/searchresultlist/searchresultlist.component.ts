@@ -1,7 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {SearchResult} from '../models/searchresult';
 import {ActivatedRoute,Router} from "@angular/router";
-import {FetchResultService} from '../searchbar/fetchresult.service';
+import {FetchResultService} from './fetchresult.service';
 
 @Component({selector: 'app-searchresultlist', templateUrl: './searchresultlist.component.html', styleUrls: ['./searchresultlist.component.css']})
 export class SearchresultlistComponent implements OnInit {
@@ -20,6 +20,7 @@ export class SearchresultlistComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log("baby");
     this
       .route
       .queryParams

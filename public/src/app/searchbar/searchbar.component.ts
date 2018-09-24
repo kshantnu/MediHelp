@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {SearchResult} from '../models/searchresult';
-import {FetchResultService} from './fetchresult.service';
+import {FetchResultService} from '../searchresultlist/fetchresult.service';
 
 
 @Component({
