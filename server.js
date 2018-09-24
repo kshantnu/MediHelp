@@ -27,7 +27,7 @@ app.post('/getsuggestion', (req, res) => {
   const tagsToSearchFor = req.body.tags;
   const queries = [];
   tagsToSearchFor.map(item => {
-    queries.push(UserSubmissions.find({diseases: item}));
+    //queries.push(UserSubmissions.find({diseases: item}));
     queries.push(UserSubmissions.find({symptoms: item}));
     queries.push(UserSubmissions.find({medicines: item}));
     queries.push(UserSubmissions.find({doctors: item}));
