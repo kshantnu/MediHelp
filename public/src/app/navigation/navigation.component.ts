@@ -70,7 +70,6 @@ OnDestroy {
       .unsubscribe();
   }
   onSearch() {
-    //this.resetAutoSuggestion();
     this
       .router
       .navigate(['suggestions'], {
@@ -79,11 +78,14 @@ OnDestroy {
         },
         preserveFragment: true
       });
+      this
+      ._fetchResultService
+      .resetSuggestions({hideAutoSugggestions: true});
+      this.resetAutoSuggestion();
   }
 
   fetchSuggestionsData(term) {
-    // this.formCtrlSub.unsubscribe(); this.textValue = term;
-    // this.form.controls['power'].setValue('anthing here');
+
     this
       .searchSuggestionTextBox
       .setValue(term);
@@ -118,6 +120,15 @@ OnDestroy {
     $('.suggestion-autocomplete').on('click', function () {
       $('.navbar-collapse').collapse('hide');
     });
+  }
+
+  unfocusAutoSuggestion() {
+    this
+      ._fetchResultService
+      .resetSuggestions({hideAutoSugggestions: true});
+      this.resetAutoSuggestion();
+
+
   }
 
 }

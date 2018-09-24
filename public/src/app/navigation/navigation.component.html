@@ -7,7 +7,7 @@
 
         <div class="input-group mb-3 navigation-search">
 
-            <input   (keyup)="resetSuggestions()" [formControl]="searchSuggestionTextBox" [value]="textValue ? textValue : ''"
+            <input (blur)="unfocusAutoSuggestion()"  (keyup)="resetSuggestions()" [formControl]="searchSuggestionTextBox" [value]="textValue ? textValue : ''"
                 type="text" class="form-control input-searchsuggestion" placeholder="Search by medicines, symptoms or doctors"
                 aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append search-textbox">
@@ -19,15 +19,15 @@
                 <div *ngIf="suggestions && onKeyUp">
 
                     <div *ngFor="let medicine of results.medicines">Medicines:<span *ngFor="let item of medicine">
-                            <a class="suggestions-link1" [routerLink]="" (click)="fetchSuggestionsData(item)">{{item |
+                            <a class="suggestions-link1" [routerLink]="" (mousedown)="fetchSuggestionsData(item)">{{item |
                                 commaseperator}}</a></span></div>
 
                     <div *ngFor="let doctor of results.doctors">Doctors:<span *ngFor="let item of doctor">
-                            <a class="suggestions-link1" [routerLink]="" (click)="fetchSuggestionsData(item)">{{item |
+                            <a class="suggestions-link1" [routerLink]="" (mousedown)="fetchSuggestionsData(item)">{{item |
                                 commaseperator}}</a></span></div>
 
                     <div *ngFor="let symptom of results.symptoms">Symptoms:<span *ngFor="let item of symptom">
-                            <a class="suggestions-link1" [routerLink]="" (click)="fetchSuggestionsData(item)">{{item |
+                            <a class="suggestions-link1" [routerLink]="" (mousedown)="fetchSuggestionsData(item)">{{item |
                                 commaseperator}}</a></span></div>
 
 
