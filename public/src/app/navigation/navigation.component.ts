@@ -131,7 +131,7 @@ OnDestroy {
   }
 
   closeNavigation(){
-    $('.suggestion-autocomplete').on('click', function () {
+    $('.suggestion-autocomplete, .search-suggestion').on('click', function () {
       $('.navbar-collapse').collapse('hide');
     });
   }
