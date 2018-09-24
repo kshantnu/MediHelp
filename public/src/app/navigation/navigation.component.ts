@@ -82,6 +82,7 @@ OnDestroy {
       ._fetchResultService
       .resetSuggestions({hideAutoSugggestions: true});
       this.resetAutoSuggestion();
+      this.closeNavigation();
   }
 
   fetchSuggestionsData(term) {
@@ -117,9 +118,7 @@ OnDestroy {
     this
       ._fetchResultService
       .resetSuggestions({hideAutoSugggestions: false});
-    $('.suggestion-autocomplete').on('click', function () {
-      $('.navbar-collapse').collapse('hide');
-    });
+      this.closeNavigation();
   }
 
   unfocusAutoSuggestion() {
@@ -129,6 +128,12 @@ OnDestroy {
       this.resetAutoSuggestion();
 
 
+  }
+
+  closeNavigation(){
+    $('.suggestion-autocomplete').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
   }
 
 }
